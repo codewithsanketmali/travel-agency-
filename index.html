@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info mx-5">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-plane-departure text-primary"></i> Travel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a onmouseover="onHover()" onmouseout="onOut()" class="nav-link dropdown-toggle" href="#"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tours
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="row bg-info ">
+                                <div class="col-md-4">
+                                    <h4 class="text-success">Asia</h4>
+                                    <h4>Bali</h4>
+                                    <h4>tokyo</h4>
+                                    <h4>singapure</h4>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <h4 class="text-success">Europe</h4>
+                                    <h4>Paris</h4>
+                                    <h4>Rome</h4>
+                                    <h4>santhoromi</h4>
+                                </div>
+
+
+                                <div class="col-md-4">
+                                    <h4 class="text-success">Africa</h4>
+                                    <h4>South africa</h4>
+                                    <h4>Egypt</h4>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#about" tabindex="-1" aria-disabled="true">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- hero -->
+    <div id="hero" class="container-fluid ">
+        <h4>DISCOVER</h4>
+        <h1 class="fs-1">THE WORLD</h1>
+        <h4>WITH US</h4>
+        <button class="btn-discover btn btn-outline-info">Discover</button>
+    </div>
+
+    <!-- quality -->
+    <div id="quality" class="container-fluid p-5">
+        <h4 class="fs-light text-center">WE ARE THE BEST</h4>
+        <h2 class="text-success text-center">_____________</h2>
+        <h1 class="text-center text-info">WHY XTRAVEL?</h1>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card1 m-2 shadow-lg p-3 mb-5  rounded">
+                    <i class="fa-solid fa-route  text-info fs-1 mt-2"></i>
+                    <h5 class="text-center">Multi Destinations</h5>
+                    <p class="text-center">Travel is the movement of people between distant geographical locations or
+                        places.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card2 m-2 shadow-lg p-3 mb-5  rounded">
+                    <i class="fa-solid fa-route  text-info fs-1 mt-2"></i>
+                    <h5 class="text-center">Multi Destinations</h5>
+                    <p class="text-center">Travel is the movement of people between distant geographical locations or
+                        places.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card1 m-2 shadow-lg p-3 mb-5  rounded">
+                    <i class="fa-solid fa-route  text-info fs-1 mt-2"></i>
+                    <h5 class="text-center">Multi Destinations</h5>
+                    <p class="text-center">Travel is the movement of people between distant geographical locations or
+                        places.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div id="services" class="container">
+
+        <div class="card m-2 shadow-lg p-3 mb-5  rounded">
+            <img src="./bedroom-1285156_1280.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card m-2 shadow-lg p-3 mb-5  rounded">
+            <img src="./bedroom-3475656_1280.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card m-2 shadow-lg p-3 mb-5  rounded">
+            <img src="./hotel-room-1447201_1280.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    <!-- About us -->
+    <div id="about" class="container">
+        <div class="about-section">
+            <h1>About Us Page</h1>
+            <p>“Work, Travel, Save, Repeat.”</p>
+            <p>“Man cannot discover new oceans unless he has the courage to lose sight of the shore."</p>
+        </div>
+
+        <h2 style="text-align:center">Our Team</h2>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="./happy-1836445_1280.jpg" alt="Jane" style="width:100%">
+                    <div class="container">
+                        <h2>Jane Doe</h2>
+                        <p class="title">CEO & Founder</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>jane@example.com</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="./portrait-3157821_1280.jpg" alt="Mike" style="width:100%">
+                    <div class="container">
+                        <h2>Mike Ross</h2>
+                        <p class="title">Art Director</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>mike@example.com</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="./man-1867009_1280.jpg" alt="John" style="width:100%">
+                    <div class="container">
+                        <h2>John Doe</h2>
+                        <p class="title">Designer</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>john@example.com</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Contact form -->
+     <section class="contact-form">
+        <div class="form-container">
+            <h2>Your Details</h2>
+            <form action="#" method="POST">
+ 
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+ 
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+ 
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone">
+ 
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+ 
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+ 
+    <!-- Company contact info -->
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <address>
+            Your Company Name<br>
+            123 Main Street<br>
+            City, State Zip Code<br>
+            Phone: <a href="tel:1234567890">123-456-7890</a><br>
+            Email: <a href="mailto:info@example.com">info@example.com</a>
+        </address>
+    </section>
+ 
+    <!-- Footer section -->
+    <footer>
+        <p>© 2023 Your Company. All rights reserved.</p>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
